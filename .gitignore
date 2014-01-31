@@ -1,0 +1,16 @@
+.DS_Store
+.Trashes
+*.lock
+*.swp
+*~.nib
+*.dSYM
+build/
+*.pbxuser
+*.perspective
+*.perspectivev3
+xcuserdata
+*.xcworkspace
+*.docset
+docset
+html
+publish
