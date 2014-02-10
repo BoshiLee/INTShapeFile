@@ -24,7 +24,7 @@ Download [shapelib](http://http://shapelib.maptools.org) and copy the following 
 
 Add the ```INTShapeFile``` directory to your Xcode project. Import ```INTShapeFile.h``` and ```INTShapeDatabase.h``` files where necessary.
 
-Make sure the ```Enable Modules (C and Objective-C)``` build setting to **YES**.
+Make sure the ```Enable Modules (C and Objective-C)``` build setting is **YES**.
 
 ####Display Shapes on MKMapView
 ```

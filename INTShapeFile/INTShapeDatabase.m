@@ -27,6 +27,8 @@
 #import "INTShapeDatabase.h"
 #import "shapefil.h"
 
+NSString * const INTShapeDatabaseRecordIndexKey = @"INTShapeDatabaseRecordIndexKey";
+
 @interface INTShapeDatabase ()
 
 @property DBFHandle handle;
@@ -111,6 +113,7 @@
     int field_width, field_decimals;
     for (int record_count = 0; record_count < self.recordsCount; record_count++) {
         NSMutableDictionary *recordDictionary = [NSMutableDictionary dictionary];
+        [recordDictionary setObject:[NSNumber numberWithInt:record_count] forKey:INTShapeDatabaseRecordIndexKey];
         for (int field_count = 0; field_count < self.fieldCount; field_count++){
             DBFFieldType field_type = DBFGetFieldInfo( _handle, field_count, field_title, &field_width, &field_decimals );
             NSString *fieldTitle = [NSString stringWithUTF8String:field_title];

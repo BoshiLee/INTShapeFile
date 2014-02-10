@@ -26,6 +26,8 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const INTShapeDatabaseRecordIndexKey;
+
 /**
  The INTShapeDatabase class offers an Objective-C interface for opening .dbf 
  files using the shapelib library. Once a .dbf file is open the fields in the 
